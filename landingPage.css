@@ -1,0 +1,333 @@
+/* Color Palette */
+
+:root {
+  --white: #ffffff;
+  --dark: #000000;
+  --light_gray: #f8f8f8;
+  --gray1: #cccccc;
+  --gray2: #bcbcbc;
+  --gray3: #00000080;
+  --gray4: #555555;
+  --gray5: #545454;
+  --light_blue: #00669e;
+  --blue: #0d5c91;
+  --light_red: #e02020;
+  --red: #af0200;
+  --pink: #af0e4e;
+}
+
+/* Global */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+/*Header*/
+.nav_upper {
+  display: flex;
+}
+.lenovo_logo {
+  width: 30%;
+}
+.icons {
+  margin-left: auto;
+  margin-top: 0.3rem;
+}
+.icons img {
+  margin-left: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
+}
+.nav_middle {
+  display: flex;
+  margin-top: 1rem;
+  width: 100%;
+}
+.middle_menu {
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+}
+.middle_menu li {
+  margin-left: 1.5rem;
+  list-style: none;
+  cursor: pointer;
+}
+.input {
+  margin-right: 0.5rem;
+  margin-left: auto;
+}
+.input_field {
+  padding: 10px;
+  width: 22rem;
+  padding-left: 1rem;
+  font-weight: 600;
+  color: black;
+  border: 1px solid var(--dark);
+  border-radius: 3px;
+  font-size: 12px;
+}
+.nav_lower {
+  display: flex;
+  margin: auto;
+  margin-top: 2rem;
+  font-size: 13px;
+  background-color: var(--light_gray);
+  padding: 1rem;
+  width: 100%;
+}
+.nav_lower li {
+  margin: auto;
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.sale {
+  color: var(--red);
+}
+
+/* Main */
+
+.promo {
+  display: flex;
+  background-color: var(--pink);
+  padding: 1rem;
+}
+.promo h2 {
+  color: var(--white);
+  font-weight: 350;
+  font-size: 16px;
+  margin: auto;
+}
+.promo span {
+  font-weight: bold;
+}
+.shop {
+  margin-left: 1.5rem;
+  text-decoration: underline;
+  font-weight: bold;
+  color: var(--white);
+}
+.options {
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--dark);
+  width: 100%;
+}
+.options li {
+  font-size: 24px;
+  color: var(--gray4);
+  list-style: none;
+  margin: auto;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.main {
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+}
+.main_container {
+  display: flex;
+  width: 100%;
+}
+.models {
+  text-align: left;
+  font-size: 25px;
+  border-bottom: 1px solid var(--gray1);
+}
+.price {
+  display: flex;
+  font-size: 14px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.price a {
+  margin-left: auto;
+}
+.price_filter {
+  list-style: none;
+  margin-right: 4rem;
+  width: 30%;
+}
+.price_filter li {
+  font-size: 14px;
+  margin-top: 2rem;
+  color: var(--gray4);
+}
+.price_filter li::before {
+  content: "";
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+  background-image: url("./assets/1601.png");
+  margin-right: 1rem;
+}
+.more {
+  margin-top: 1rem;
+  color: var(--light_blue);
+  font-size: 14px;
+  border-bottom: 1px solid var(--gray1);
+  padding-bottom: 2rem;
+  cursor: pointer;
+}
+.select {
+  display: flex;
+  margin-top: 2rem;
+  width: 100%;
+}
+.select select {
+  margin-left: auto;
+  padding: 1rem;
+  width: 25%;
+  color: var(--gray4);
+  padding-right: 1rem;
+}
+.option {
+  width: 100%;
+}
+.results {
+  width: 100%;
+}
+.cards {
+  display: flex;
+  width: 100%;
+}
+.card {
+  border: 1px solid var(--gray2);
+  height: auto;
+  position: relative;
+  margin-top: 3rem;
+  border-radius: 2px;
+  box-shadow: 1px 1px 4px 2px var(--dark);
+  width: 100%;
+  margin-left: 2rem;
+}
+.doorbuster {
+  background-color: var(--red);
+  color: white;
+  font-size: 12px;
+  width: 70%;
+  padding: 0.3rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  border-radius: 2px;
+}
+.img {
+  width: 11rem;
+  height: 9rem;
+  margin: auto;
+  margin-top: 4rem;
+  display: block;
+  transition: 0.5s;
+}
+.img:hover {
+  transform: scale(1.3);
+}
+.img_buster {
+  width: 11rem;
+  height: 9rem;
+  margin: auto;
+  display: block;
+  margin-top: 1rem;
+  transition: 0.5s;
+}
+.img_buster:hover {
+  transform: scale(1.3);
+  position: relative;
+}
+.thinkpad {
+  color: var(--light_blue);
+  font-size: 12px;
+  text-align: center;
+  margin-top: 1rem;
+}
+.price {
+  margin-top: 1rem;
+  font-size: 20px;
+  margin-left: 1rem;
+}
+.card h4 {
+  margin-left: 1rem;
+}
+.code {
+  font-weight: 900;
+}
+.add_cart {
+  margin: auto;
+  margin-top: 1rem;
+  background-color: var(--light_blue);
+  color: white;
+  width: 90%;
+  border-radius: 3px;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.add_cart:hover {
+  background-color: var(--pink);
+}
+.banner {
+  margin-top: 2rem;
+  padding: 2rem;
+  font-size: 15px;
+  color: var(--white);
+  background-color: var(--pink);
+  margin-bottom: 2rem;
+}
+
+/* Reponsive */
+
+/* Mobile */
+
+@media (max-width: 320px) {
+  .nav_middle {
+    display: block;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 750px) {
+  .nav_middle {
+    display: block;
+  }
+  .input {
+    text-align: center;
+  }
+  .nav_lower {
+    display: block;
+  }
+  .options {
+    display: block;
+  }
+  .cards {
+    display: block;
+  }
+}
